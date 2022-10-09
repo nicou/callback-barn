@@ -1,0 +1,56 @@
+service: callback-barn
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: eu-west-1
+  iamRoleStatements:
+  - Effect: Allow
+    Action:
+      - dynamodb:DescribeTable
+      - dynamodb:Query
+      - dynamodb:Scan
+      - dynamodb:GetItem
+      - dynamodb:PutItem
+      - dynamodb:UpdateItem
+      - dynamodb:DeleteItem
+    Resource:
+      - "Fn::GetAtt": [InvocationsTable, Arn]
+
+useDotenv: true
+
+functions:
+  CallbackBarnHandler:
+    handler: src/index.handler
+    timeout: 10
+    environment:
+      API_KEY: ${env:API_KEY}
+    events:
+      - http:
+          path: /{listenerId}
+          method: get
+      - http:
+          path: /{listenerId}
+          method: post
+
+resources:
+  Resources:
+    InvocationsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: callback-barn-invocations
+        AttributeDefinitions:
+          - AttributeName: listenerId
+            AttributeType: S
+          - AttributeName: createdAt
+            AttributeType: S
+        KeySchema:
+          - AttributeName: listenerId
+            KeyType: HASH
+          - AttributeName: createdAt
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST
+
+plugins:
+  - serverless-plugin-typescript
