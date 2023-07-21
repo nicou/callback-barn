@@ -9,16 +9,16 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/express": "^4.17.16",
-    "aws-sdk": "^2.1304.0",
-    "serverless": "^3.27.0",
-    "serverless-plugin-typescript": "^2.1.4",
+    "@types/express": "^4.17.17",
+    "aws-sdk": "^2.1418.0",
+    "serverless": "^3.33.0",
+    "serverless-plugin-typescript": "^2.1.5",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@vendia/serverless-express": "^4.10.1",
-    "dotenv": "^16.0.3",
+    "@vendia/serverless-express": "^4.10.4",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "http-status-codes": "^2.2.0"
   }
