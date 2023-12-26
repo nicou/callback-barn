@@ -26,6 +26,7 @@
     "@vendia/serverless-express": "^4.12.6",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "http-status-codes": "^2.3.0"
+    "http-status-codes": "^2.3.0",
+    "serverless-better-credentials": "^2.0.0"
   }
 }

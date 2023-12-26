@@ -53,4 +53,5 @@ resources:
         BillingMode: PAY_PER_REQUEST
 
 plugins:
+  - serverless-better-credentials
   - serverless-plugin-typescript
