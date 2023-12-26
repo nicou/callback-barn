@@ -6,16 +6,21 @@
   "main": "src/index.js",
   "scripts": {
     "build": "tsc --noEmit",
-    "deploy": "serverless deploy"
+    "deploy": "serverless deploy",
+    "test": "vitest --coverage"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/supertest": "^6.0.1",
+    "@vitest/coverage-v8": "^1.1.0",
     "aws-sdk": "^2.1525.0",
     "serverless": "^3.38.0",
     "serverless-plugin-typescript": "^2.1.5",
+    "supertest": "^6.3.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
   },
   "dependencies": {
     "@vendia/serverless-express": "^4.12.6",

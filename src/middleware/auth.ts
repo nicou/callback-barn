@@ -10,7 +10,7 @@ export default function authenticationMiddleware(
   if (!API_KEY) return next();
 
   if (req.query.token !== API_KEY) {
-    return res.status(HttpStatus.UNAUTHORIZED).send({ error: "Unauthorized" });
+    return res.status(HttpStatus.UNAUTHORIZED).json({ error: "Unauthorized" });
   }
 
   return next();

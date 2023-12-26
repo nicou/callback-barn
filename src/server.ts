@@ -1,7 +1,7 @@
 import express from "express";
 import StatusCodes from "http-status-codes";
-import * as DynamoDB from "./dynamodb";
-import authenticationMiddleware from "./auth";
+import * as DynamoDB from "./integrations/aws/dynamodb";
+import authenticationMiddleware from "./middleware/auth";
 
 const app = express();
 app.disable("x-powered-by");
