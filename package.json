@@ -17,7 +17,7 @@
     "aws-sdk": "^2.1531.0",
     "serverless": "^3.38.0",
     "serverless-plugin-typescript": "^2.1.5",
-    "supertest": "^6.3.3",
+    "supertest": "^6.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vitest": "^1.2.0"
