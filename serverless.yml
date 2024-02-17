@@ -5,6 +5,7 @@ provider:
   name: aws
   runtime: nodejs20.x
   region: eu-west-1
+  stage: prod
   iamRoleStatements:
   - Effect: Allow
     Action:
@@ -21,18 +22,14 @@ provider:
 useDotenv: true
 
 functions:
-  CallbackBarnHandler:
+  handler:
     handler: src/index.handler
-    timeout: 10
+    timeout: 15
     environment:
       API_KEY: ${env:API_KEY}
     events:
-      - http:
-          path: /{listenerId}
-          method: get
-      - http:
-          path: /{listenerId}
-          method: post
+      - httpApi: GET /invocations/{listenerId}
+      - httpApi: ANY /invoke/{listenerId}
 
 resources:
   Resources:
@@ -54,4 +51,4 @@ resources:
 
 plugins:
   - serverless-better-credentials
-  - serverless-plugin-typescript
+  - serverless-esbuild
