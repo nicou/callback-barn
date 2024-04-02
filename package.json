@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/aws-lambda": "8.10.134",
+    "@types/aws-lambda": "8.10.136",
     "@vitest/coverage-v8": "1.4.0",
     "esbuild": "0.20.2",
     "serverless": "3.38.0",
