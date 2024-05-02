@@ -20,7 +20,7 @@
     "serverless": "3.38.0",
     "serverless-better-credentials": "2.0.0",
     "serverless-esbuild": "1.52.1",
-    "typescript": "5.4.3",
+    "typescript": "5.4.5",
     "vitest": "1.5.3"
   },
   "dependencies": {
