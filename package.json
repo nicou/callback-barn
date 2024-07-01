@@ -17,7 +17,7 @@
     "@types/aws-lambda": "8.10.138",
     "@vitest/coverage-v8": "1.6.0",
     "esbuild": "0.20.2",
-    "serverless": "3.38.0",
+    "serverless": "4.1.7",
     "serverless-better-credentials": "2.0.0",
     "serverless-esbuild": "1.52.1",
     "typescript": "5.4.5",
