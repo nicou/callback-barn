@@ -16,14 +16,14 @@
   "devDependencies": {
     "@types/aws-lambda": "8.10.145",
     "@vitest/coverage-v8": "2.0.5",
-    "esbuild": "0.20.2",
+    "esbuild": "0.24.0",
     "serverless": "3.39.0",
     "serverless-better-credentials": "2.0.0",
     "serverless-esbuild": "1.54.3",
-    "typescript": "5.5.4",
+    "typescript": "5.6.2",
     "vitest": "2.0.5"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "3.658.1"
+    "@aws-sdk/client-dynamodb": "3.662.0"
   }
 }
