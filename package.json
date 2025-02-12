@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/aws-lambda": "8.10.147",
     "@vitest/coverage-v8": "2.1.8",
-    "esbuild": "0.24.2",
+    "esbuild": "0.25.0",
     "serverless": "3.40.0",
     "serverless-better-credentials": "2.0.0",
     "serverless-esbuild": "1.54.6",
