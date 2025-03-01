@@ -19,7 +19,7 @@
     "esbuild": "0.24.2",
     "serverless": "3.40.0",
     "serverless-better-credentials": "2.0.0",
-    "serverless-esbuild": "1.54.6",
+    "serverless-esbuild": "1.55.0",
     "typescript": "5.7.3",
     "vitest": "2.1.8"
   },
